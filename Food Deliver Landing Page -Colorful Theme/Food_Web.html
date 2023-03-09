@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Online Food Delivery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            font-family: 'Ubuntu', sans-serif;
+            color: black;
+            /* font-size: bolder; */
+            height: 1000px;
+            background-color: rgb(167, 166, 166);
+            font-weight: 600;
+            /* background-image: url("backfood1.jpg");
+            background-repeat: no-repeat; */
+        }
+        .background img{
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* height: 500px;*/
+            width: 1422px;
+            /* background-attachment:scroll; */
+            opacity:calc(0.6);
+        }
+        
+        .head{
+            /* color:rgb(255, 0, 145); */
+            color:rgb(255, 0, 64);
+            position: absolute;
+            top:6px;
+            left:405px;
+            font-size: 25px;
+            /* background-color: rgb(128, 127, 127); */
+            border-radius: 10px;
+            padding: 0px 18px;
+            /* margin: 2px 0px; */
+        }
+
+        .left{
+            display: inline-block;
+            /* border:2px solid rgb(255, 0, 0); */
+            margin: 2px 2px;
+            padding: 2px 2px;
+            position: absolute;
+            top:15px;
+            left: 10px;
+        }
+        .left img{
+            border-radius:10px;
+            width:90px;
+            filter: invert(100%);
+        }
+        .mid{
+            display: block;
+            width: 50%;
+            margin:2px auto;
+            /* border:2px solid rgb(1, 238, 255); */
+            position: absolute;
+            top:50px;
+            left:350px;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .mid ul{
+            padding: 2px 2px;
+            margin:10px 15px;
+        }
+        .mid li{
+            list-style: none;
+            display: inline;
+            
+        }
+        .mid li a{
+            text-decoration: none;
+            margin: 2px 4px;
+            padding: 4px 45px;
+            color:rgb(174, 0, 255);
+            font-size: 21px;
+            
+        }
+        .mid li a:hover , .mid li a.active{
+            color: rgb(255, 0, 234);
+        }
+        .right{
+            display: inline-block;
+        }
+        .right{
+            position: absolute;
+            top:40px;
+            right:100px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .right img{
+            position: absolute;
+            top: 24px;
+            right: 99px;
+            width: 36px;
+        }
+        .btn{
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 18px;
+            padding: 2px 2px;
+            margin: 2px 2px;
+            font-weight: bold;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .btn:hover{
+            color: rgb(255, 31, 105);
+            background-color: black;
+        }
+        .container{
+            position: absolute;
+            top:180px;
+            left: 40px;
+            
+        }
+        .container .box{
+            padding: 2px 2px;
+            display: inline-block;
+            border: 2px solid gold;
+            border-radius: 10px;
+            margin: 12px 20px;
+            width: 400px;
+            height: 276px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: 600;
+        }
+        .container #veg{
+            top:200px;
+        }
+        #veg:hover{
+            color: rgb(2, 38, 61);
+        }
+        #non:hover{
+            color: rgb(2, 38, 61);
+        }
+        #sna:hover{
+            color: rgb(2, 38, 61);
+        }
+
+        .sign{
+            /* border:2px solid salmon; */
+            position: absolute;
+            top: 554px;
+            left: 54px;
+            text-align: center;
+        }
+        .sign .sing{
+            font-size: 30px;
+        }
+        .sign input{  
+            font-size: 18px;
+            font-weight: 600;
+            font-family: 'Ubuntu', sans-serif;
+            margin: 8px 10px;
+            padding: 8px 4px;
+            border-radius: 10px;
+        }
+        .store{
+            /* border: 2px solid black; */
+            position: absolute;
+            top:545px;
+            right:25px;
+            font-size: 20px;
+            text-align:center;
+        }
+        .store img{
+            margin: 2px 7px;
+            padding: 2px 5px;
+            border-radius: 18px;
+        }
+        .search{
+            position: absolute;
+            top: 866px;
+            left: 100px;
+        }
+        .search input{
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: 600;
+            margin:2px 4px;
+            padding: 2px 2px;
+            font-size: 20px;
+            width: 1100px;
+            border-radius: 10px;
+        }
+        .search img{
+            position: absolute;
+            top:1px;
+            width:25px;
+            cursor: pointer;
+        }
+        .map {
+            position: absolute;
+            top: 917px;
+            left: 106px;
+            text-align: center;
+        }
+        .map img{
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="background">
+        <img src="backfood.jpg" alt="">
+        <img src="backfood1.jpg" alt="">
+    </div>
+    <div class="menu">
+    <header class="head">
+        <h2>Welcome to Online Food Delivery</h2>
+    </header>
+    <div class="left">
+        <img src="vk_logo.jpg" alt="Food Delivery">
+    </div>
+    <div class="mid" id="navi">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <div class="right">
+        <div>Welcome User,</div>
+        <img src="user icon.png" alt="">
+        <button class="btn">Login</button>       
+    </div>
+    </div>
+    <div class="container">
+        <div class="box" id="veg"><h3>Veg</h4>
+            Vegetarianism is the practice of abstaining from the consumption of meat (poultry, seafood, and the flesh of any other animal). It may also include abstaining from eating all by-products of animal.
+            Vegetarianism may be adopted for various reasons. Many people object to eating meat out of respect for sentient animal life. Such ethical motivations have been codified under various religious beliefs as well as animal rights advocacy.
+        </div>
+        <div class="box" id="non"><h3>Non-Veg</h3>
+            Non-vegetarian food (in Indian English sometimes shortened to non-veg food) contains meat (red meat, poultry, seafood, or the flesh of any other animal), and sometimes, eggs. When describing people, non-vegetarians eat meat, as opposed to vegetarians. The diet, non-vegetarianism is the majority human diet in the world (including India). Non-vegetarians are also called omnivores in nutritional science.
+        </div>
+        <div class="box" id="sna"><h3>Snacks</h3>
+            snack is a small portion of food generally eaten between meals. Snacks come in a variety of forms including packaged snack foods and other processed foods, as well as items made from fresh ingredients at home.
+            Traditionally, snacks are prepared from ingredients commonly available at home without a great deal of preparation. Often cold cuts, fruits, leftovers, nuts, sandwiches, and sweets are used as snacks. 
+        </div>
+    </div>
+    <div class="sign">
+        <div class="sing">Greetings User,</div>
+        <input type="text" name="Login" placeholder="Username">
+        <div>
+            <input type="text" name="pass" placeholder="Password">
+        </div>
+        <button class="btn">Sumbit</button>
+    </div>
+    <div class="store">
+        <div><h2>Stores Near-by</h2></div>
+        <img src="dp.jpg" alt="">
+        <img src="np.jpg" alt="">
+        <img src="m.jpg" alt="">
+        <img src="fb.jpg" alt="">
+    </div>
+
+    <div class="search">
+        <input type="text" name="Search" placeholder="Search by location">
+        <img src="location-pin.png" alt="">
+    </div>
+    <div class="map">
+        <img src="location.jpg" alt="">
+    </div>
+</body>
+</html>
